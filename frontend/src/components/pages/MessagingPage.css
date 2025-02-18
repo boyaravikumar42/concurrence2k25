@@ -1,0 +1,349 @@
+/* 🌌 FULLSCREEN NEON BACKGROUND */
+
+
+/* 🚀 PARTICLE ANIMATION BACKGROUND */
+.messaging-container {
+  display: flex;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.messaging-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.imgur.com/ZVDrTrJ.jpg") repeat;
+  opacity: 0.2;
+  z-index: -1;
+  animation: moveBg 15s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
+/* 🛰️ SIDEBAR - Glass & Neon UI */
+.sidebar {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-right: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* 🔍 SEARCH BAR */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.search-bar input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-bar .search-icon {
+  color: white;
+}
+
+/* 🔥 USER LIST WITH HOVER EFFECT */
+.user-list {
+  max-height: 80vh;
+  overflow-y: auto;
+  
+}
+
+.conversation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.conversation:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.005);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 🔵 UNREAD MESSAGE INDICATOR */
+.unread-count {
+  background: #ff0066;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0px #ff0066;
+  }
+
+  50% {
+    box-shadow: 0 0 15px #ff0066;
+  }
+
+  100% {
+    box-shadow: 0 0 0px #ff0066;
+  }
+}
+
+/* Subtle Moving Stars Effect */
+@keyframes starsMove {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -100px 100px;
+  }
+}
+/*Chat Window */
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 0px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Smooth Fade In Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-button {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  color: #ffd700;
+}
+/* 🔥 MESSAGES CONTAINER */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 12px;
+}
+
+/* ✨ MESSAGE BUBBLES */
+.message {
+  max-width: 75%;
+  word-wrap: break-word;
+  padding: 14px 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: popIn 0.3s ease-in-out forwards;
+}
+
+/* 🌀 MESSAGE POP IN ANIMATION */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 🔵 SENT MESSAGES (Glowing Gradient) */
+.sent {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #4c74ff, #1e40af);
+  color: white;
+  text-align: right;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.sent:hover {
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.6);
+  transform: scale(1.02);
+}
+
+/* 🔵 SENT MESSAGE TAIL */
+.sent::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  border: 10px solid transparent;
+  border-left-color: #1e40af;
+}
+
+/* ⚫ RECEIVED MESSAGES (Frosted Glass Look) */
+.received {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.received:hover {
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* ⚫ RECEIVED MESSAGE TAIL */
+.received::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  border: 10px solid transparent;
+  border-right-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 💡 TYPING INDICATOR */
+.typing {
+  font-size: 14px;
+  color: #bbbbbb;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ⚡ MESSAGE INPUT BAR */
+.message-input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 14px;
+  border-radius: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.message-input:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* 📝 TEXT INPUT */
+.message-input input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* 🚀 SEND BUTTON */
+.message-input button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.message-input button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* 🏆 CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}

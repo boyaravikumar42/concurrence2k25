@@ -1,0 +1,101 @@
+/* Home.css */
+
+.home-container-main {
+  height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #02286e, #2a5298);
+    margin: 0%;
+}
+
+
+.hero-section {
+    margin-top: 0px;
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: #ff4757;
+    color: white;
+    transition: 0.3s;
+}
+
+.cta.secondary {
+    background: #1e3c72;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.info-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.magic-effect {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent);
+    filter: blur(80px);
+    animation: magic 5s infinite alternate;
+    right:40%;
+    top:20px
+    
+}
+
+@keyframes magic {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}

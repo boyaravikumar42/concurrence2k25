@@ -1,0 +1,66 @@
+.leaderboard-container {
+    background: linear-gradient(to right, #002855, #004080);
+    color: white;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: 20px auto;
+    margin-bottom: 0%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.leaderboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 255, 0.712);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.leaderboard-table th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.leaderboard-table tr:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.top-rank0{
+    background: linear-gradient(to right, gold, orange);
+    color: black;
+    font-weight: bold;
+}
+.top-rank1 {
+    background: linear-gradient(to right, orange, rgb(9, 179, 26));
+    color: black;
+    font-weight: bold;
+}
+.top-rank2 {
+    background: linear-gradient(to right, rgb(9, 179, 26),blue);
+    color: black;
+    font-weight: bold;
+}

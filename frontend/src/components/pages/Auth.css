@@ -1,0 +1,154 @@
+
+
+/* Auth Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88.8vh;
+    padding: 1rem;
+}
+
+/* Auth Box */
+.auth-box {
+    background: linear-gradient(135deg, #0078d4, #005bb5);
+    border-radius: 15px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.auth-box:hover {
+    transform: scale(1.005);
+}
+
+.auth-box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 1rem 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.auth-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-box input:focus {
+    outline: none;
+    border-color: #00b4d8;
+    background-color: rgba(0, 180, 216, 0.1);
+}
+
+/* Button Styles */
+.auth-button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #360ed9;
+    /* Blue accent */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-button:hover {
+    background-color: #090587;
+    transform: scale(1.05);
+}
+
+/* Google Login Button */
+.google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.google-btn:hover {
+    background-color: #357ae8;
+    transform: scale(1.05);
+}
+
+.google-btn span {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Links */
+.auth-box p {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.auth-box a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+    color: #00a0c6;
+}
+
+/* Animations for Inputs */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-box input {
+    animation: slideIn 0.8s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0078d4;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #005bb5;
+}

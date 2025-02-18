@@ -1,0 +1,173 @@
+/* 🌟 NEXT-LEVEL UI STYLES - Magical, Glassmorphic, and Neon Inspired */
+
+/* 🏆 ULTIMATE POST CARD */
+.post-card-item {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    margin-bottom: 0%;
+    background: rgba(25, 25, 25, 0.9);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px) saturate(200%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.post-card-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+}
+
+/* ✨ HEADER */
+.post-card-item .post-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.post-card-item .post-profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.7);
+}
+.post-card-item .post-card-header .profile-info {
+    display: flex;
+    align-items: center;
+   justify-content: flex-end;
+    gap: 30px;
+   
+}
+.post-card-item .post-card-user {
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.post-card-item .post-card-college {
+    font-size: 15px;
+    color: rgba(200, 200, 200, 0.8);
+}
+
+/* 🎭 POST CONTENT */
+.post-card-item .post-card-content {
+    font-size: 18px;
+    color: #f5f5f5;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+/* 🔥 IMAGE */
+.post-card-item .post-card-media img {
+    width: 100%;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card-item .post-card-media img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 255, 255, 0.5);
+}
+
+/* 🌊 BUTTONS */
+.post-card-item .post-card-interactions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.post-card-item .interaction-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.post-card-item .interaction-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* 🔥 LIKE ICON */
+.post-card-item .like-eye-icon {
+    font-size: 22px;
+    color: #f5f5f5;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.post-card-item .like-eye-icon:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+/* 💬 COMMENT SECTION */
+.post-card-item .comment-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.post-card-item .comment-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.post-card-item .comment-input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.post-card-item .comment-button {
+    margin-top: 10px;
+    background: linear-gradient(45deg, #00eaff, #ff00cc);
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.post-card-item .comment-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 0, 204, 0.5);
+}
+
+/* 🌟 ANIMATED LOADING */
+.post-card-item .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid #00eaff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

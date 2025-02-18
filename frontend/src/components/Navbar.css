@@ -1,0 +1,242 @@
+/* Navbar.css */
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.magical-navbar {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-icon {
+    margin-right: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.brand-name {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 15px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #ffcc00;
+}
+
+.post-button {
+    background: #ffcc00;
+    color: #1e3a8a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.post-button:hover {
+    background: #f59e0b;
+}
+
+.notification-container {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.notification-icon {
+    font-size: 22px;
+    transition: transform 0.2s;
+    color: rgb(242, 238, 238);
+    z-index: 25;
+}
+
+.notification-icon:hover {
+    transform: rotate(15deg);
+}
+
+
+.profile-container-nav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-pic-img-id {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+.profile-name-id {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 10px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.dropdown-menu ul li a {
+    text-decoration: dotted;
+}
+
+.dropdown-menu li:hover {
+    background: #e5e7eb;
+}
+.dropdown-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-container-nav:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+.logout {
+    color: red;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 5px #ffcc00);
+    }
+
+    to {
+        filter: drop-shadow(0 0 15px #ffcc00);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sticky-search-icon {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    background: #1e88e5;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 5s ease-in;
+}
+
+
+
+
+
+
+
+.navbar {
+    /* position: absolute; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+}
+
+ .navbar .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar .register {
+    background: #ff4757;
+}
+
+.navbar .nav-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.notification-badge {
+   margin-left: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+} 

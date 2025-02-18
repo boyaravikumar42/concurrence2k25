@@ -1,0 +1,275 @@
+/* Chatbot Container */
+.chatbot-container-page {
+min-height: 88vh;
+}
+.chatbot-container {
+    width: 420px;
+    height: 580px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.6);
+    overflow: hidden;
+    background: linear-gradient(135deg, #031c30, #0a2742);
+    color: white;
+    border: 2px solid #00bfff;
+    position: relative;
+}
+
+/* Chat Header */
+.chat-header {
+    background: linear-gradient(90deg, #007bff, #00aaff);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.5);
+    position: relative;
+}
+
+/* Glow Animation for Header */
+.chat-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #00bfff;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px #00bfff;
+}
+
+/* Chat Body */
+.chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: thin;
+    scrollbar-color: #00aaff #031c30;
+}
+
+/* Scrollbar Styling */
+.chat-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+    background: #031c30;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    background: #00aaff;
+    border-radius: 3px;
+}
+
+/* Chat Messages */
+.chat-message {
+    max-width: 80%;
+    padding: 14px;
+    margin: 8px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Message Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* User Message */
+.chat-message.user {
+    align-self: flex-end;
+    background: linear-gradient(120deg, #007bff, #00bfff);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.6);
+    border: 2px solid #00aaff;
+    position: relative;
+}
+
+/* User Message Glow Effect */
+.chat-message.user::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #00bfff;
+    box-shadow: 0px 0px 10px #00bfff;
+}
+
+/* Bot Message */
+.chat-message.bot {
+    align-self: flex-start;
+    background: linear-gradient(120deg, #1b263b, #2c3e50);
+    color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    border: 2px solid #00bfff;
+    position: relative;
+}
+
+/* Bot Message Glow Effect */
+.chat-message.bot::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #00bfff;
+    box-shadow: 0px 0px 10px #00bfff;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    font-style: italic;
+    color: #00bfff;
+    margin-left: 5px;
+    font-size: 15px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* Chat Footer */
+.chat-footer {
+    display: flex;
+    padding: 12px;
+    background: #1b263b;
+    border-top: 2px solid #007bff;
+    position: relative;
+}
+
+/* Glowing Animation on Footer */
+.chat-footer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #007bff;
+    box-shadow: 0px 0px 10px #007bff;
+}
+
+/* Input Field */
+.chat-footer input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #112d4e;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.chat-footer input::placeholder {
+    color: #00bfff;
+}
+
+.chat-footer input:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0px 0px 8px #007bff;
+}
+
+/* Send Button */
+.chat-footer button {
+    background: linear-gradient(120deg, #007bff, #00bfff);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-left: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.6);
+}
+
+.chat-footer button:hover {
+    background: linear-gradient(120deg, #0056b3, #008cff);
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.8);
+    transform: scale(1.05);
+}
+
+.chat-footer button:disabled {
+    background: rgb(230, 5, 5);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    font-style: italic;
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    animation: typingBlink 1.5s infinite;
+}
+
+/* Bot Typing Indicator - Left Side */
+.typing-indicator.bot {
+    align-self: flex-start;
+    color: #005b96;
+    background: rgba(0, 91, 150, 0.1);
+    border-left: 3px solid #005b96;
+}
+
+/* User Typing Indicator - Right Side */
+.typing-indicator.user {
+    align-self: flex-end;
+    color: #0078d4;
+    background: rgba(0, 120, 212, 0.1);
+    border-right: 3px solid #0078d4;
+}
+
+/* Blinking Animation */
+@keyframes typingBlink {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}

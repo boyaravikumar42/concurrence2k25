@@ -1,0 +1,76 @@
+/* Alert Container */
+.alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    animation: slideIn 1s ease-out;
+    z-index:10000000000;
+}
+
+/* Alert Box Styling */
+.alert-box {
+    background-color: #4caf50;
+    /* Green background for success */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Alert Message */
+.alert-message {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+/* Close Button Styling */
+.close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Different types of Alerts */
+.alert-container.error .alert-box {
+    background-color: #f44336;
+    /* Red background for error */
+}
+
+.alert-container.warning .alert-box {
+    background-color: #ff9800;
+    /* Orange background for warning */
+}
+.alert-container.msg .alert-box {
+    background-color: #4caf50;
+    
+}
+
+/* Animation for the alert */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

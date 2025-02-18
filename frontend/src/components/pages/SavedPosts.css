@@ -1,0 +1,33 @@
+.saved-posts-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    cursor: pointer;
+    min-height: 90vh;
+}
+
+.saved-post {
+    display: flex;
+    align-items: center;
+    background: #f0f5ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.saved-post img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.post-content h3 {
+    margin: 0;
+    color: #004aad;
+}
+
+.post-content p {
+    margin: 5px 0 0;
+    color: #333;
+}

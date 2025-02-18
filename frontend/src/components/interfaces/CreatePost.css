@@ -1,0 +1,203 @@
+/* 🌌 Cosmic Blue-Themed Background */
+.create-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #010a26, #021f4b);
+    padding: 20px;
+    animation: backgroundAnimation 10s infinite alternate ease-in-out;
+}
+
+/* 🎭 Glassmorphic Post Box with Neon Glows */
+.post-box {
+    width: 520px;
+    background: rgba(10, 25, 50, 0.85);
+    border-radius: 18px;
+    padding: 30px;
+    backdrop-filter: blur(12px);
+    border: 3px solid rgba(0, 225, 255, 0.4);
+    box-shadow: 0px 10px 40px rgba(0, 255, 255, 0.7);
+    animation: fadeInUp 0.8s ease-in-out;
+    position: relative;
+}
+
+/* 🌟 Neon Blue Pulse Border */
+.post-box::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 20px;
+    border: 4px solid transparent;
+    background: linear-gradient(45deg, #00d9ff, #0084ff);
+    filter: blur(15px);
+    z-index: -1;
+    animation: neonGlow 2s infinite alternate ease-in-out;
+}
+
+/* 🔥 Glowing Title */
+.title {
+    text-align: center;
+    color: #eef4f5;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 15px rgba(0, 255, 255, 1);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* 💠 Futuristic Textarea */
+.post-input {
+    width: 100%;
+    height: 130px;
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.12);
+    color: #d1f7ff;
+    box-shadow: inset 0px 0px 12px rgba(0, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+}
+
+.post-input::placeholder {
+    color: rgba(10, 5, 116, 0.5);
+    font-style: italic;
+}
+
+.post-input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
+}
+
+/* 🔹 Cyberpunk Icon Buttons */
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon-button {
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    box-shadow: 0px 0px 18px rgba(0, 255, 255, 0.6);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+   
+}
+
+.icon-button:hover {
+    transform: scale(1.2);
+    background: rgba(0, 255, 255, 0.25);
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.9);
+}
+
+/* 🚀 3D Animated Post Button */
+.magical-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #007cfb, #00e6ff);
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 6px 30px rgba(0, 255, 255, 0.9);
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.magical-button::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: skewX(-30deg);
+    animation: buttonShine 3s infinite linear;
+}
+
+.magical-button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(90deg, #00e6ff, #007cfb);
+    box-shadow: 0px 15px 35px rgba(0, 255, 255, 1);
+}
+
+/* 📎 Glowing Attachment Preview */
+.attachment-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.attachment-item {
+    background: rgba(0, 255, 255, 0.2);
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #d1f7ff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0px 0px 18px rgba(0, 255, 255, 0.7);
+}
+
+/* 🎇 Neon Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes neonGlow {
+    from {
+        filter: blur(12px);
+        opacity: 0.8;
+    }
+
+    to {
+        filter: blur(18px);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonShine {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes backgroundAnimation {
+    from {
+        background: linear-gradient(135deg, #020c1b, #021f4b);
+    }
+
+    to {
+        background: linear-gradient(135deg, #010a26, #002b5e);
+    }
+}

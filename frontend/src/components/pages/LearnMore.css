@@ -1,0 +1,180 @@
+.learn-more-container {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #0077ff, #00b2ff);
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    padding: 12px 30px;
+    background: #00b2ff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background: #0099cc;
+}
+.hero {
+    text-align: center;
+    margin-top: 50px;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    /* darken the background slightly */
+    border-radius: 15px;
+    position: relative;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    /* Ensure the text is white */
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    z-index: 1;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Add a text shadow for better visibility */
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #f4f1f1;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+
+
+.features {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.stats {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.stats h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.stat-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    color: #00b2ff;
+}
+
+.stat-box p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #003366;
+    border-radius: 15px;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background: #00b2ff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0099cc;
+}
